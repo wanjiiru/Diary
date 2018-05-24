@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+            <form (ngSubmit)='submitDiary()' #diaryForm='ngForm'>
+                <label for="name">Name</label>
+                <input type="text" required class="form-control" id="name" name="asdf" [(ngModel)]="newDiary.name">
+            <div class="form-group">
+
+                <label for="description">Description</label>
+                <textarea class="form-control" id="description" rows="4" required name="asd" [(ngModel)]= "newDiary.description"></textarea>
+                
+            </div>
+            <div class="form-group">
+                <label for="complete">Date</label>
+                <input type='date' id="complete" required>"
+                
+            </div>
+            <button type="submit" class="btn btn-success btn-lg">Add new Diary Entry</button>
+            </form>
+    </div>
+
+</div>
